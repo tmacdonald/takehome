@@ -64,11 +64,11 @@ public class OrgTreeValidatorTest {
 	@Test
 	/*
 	 * Valid Tree
-	 * 					company
-	 * 					/	  \
-	 * 			department1	department2
-	 * 				|			|
-	 * 			  user1        user2
+	 *                   company
+	 *                   /    \
+	 *           department1 department2
+	 *               |           |
+	 *             user1       user2
 	 * 
 	 */
 	public void testValidTree(){
