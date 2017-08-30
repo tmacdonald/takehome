@@ -15,6 +15,10 @@ public class TreeNode<T> implements Iterable<TreeNode<T>> {
             this.data = data;
             this.children = new LinkedList<TreeNode<T>>();
         }
+        
+        public static <T> TreeNode<T> from(T data) {
+        		return new TreeNode(data);
+        }
 
         public TreeNode<T> addChild(T child) {
             TreeNode<T> childNode = new TreeNode<T>(child);
