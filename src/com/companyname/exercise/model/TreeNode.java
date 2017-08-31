@@ -1,4 +1,4 @@
-package com.companyname.model;
+package com.companyname.exercise.model;
 
 import java.util.Iterator;
 import java.util.LinkedList;

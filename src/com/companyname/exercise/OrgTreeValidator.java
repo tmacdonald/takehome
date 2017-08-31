@@ -1,8 +1,8 @@
-package test.companyname;
+package com.companyname.exercise;
 
-import com.companyname.model.OrgTreeItem;
-import com.companyname.model.OrgTreeType;
-import com.companyname.model.TreeNode;
+import com.companyname.exercise.model.OrgTreeItem;
+import com.companyname.exercise.model.OrgTreeType;
+import com.companyname.exercise.model.TreeNode;
 
 public class OrgTreeValidator {
 	

@@ -1,4 +1,4 @@
-package com.companyname.model;
+package com.companyname.exercise.model;
 
 public class Address {
 	String addressLine1;

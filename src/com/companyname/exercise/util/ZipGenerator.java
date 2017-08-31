@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.companyname.util;
+package com.companyname.exercise.util;
 
 import java.security.SecureRandom;
 

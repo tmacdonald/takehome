@@ -1,4 +1,4 @@
-package test.companyname;
+package com.companyname.exercise.tests;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -13,15 +13,16 @@ import java.util.List;
 
 import org.junit.Test;
 
-import com.companyname.model.Company;
-import com.companyname.model.Department;
-import com.companyname.model.OrgTreeItem;
-import com.companyname.model.OrgTreeType;
-import com.companyname.model.TreeNode;
-import com.companyname.model.User;
-import com.companyname.util.CompanyGenerator;
-import com.companyname.util.DepartmentGenerator;
-import com.companyname.util.UserGenerator;
+import com.companyname.exercise.OrgTreeValidator;
+import com.companyname.exercise.model.Company;
+import com.companyname.exercise.model.Department;
+import com.companyname.exercise.model.OrgTreeItem;
+import com.companyname.exercise.model.OrgTreeType;
+import com.companyname.exercise.model.TreeNode;
+import com.companyname.exercise.model.User;
+import com.companyname.exercise.util.CompanyGenerator;
+import com.companyname.exercise.util.DepartmentGenerator;
+import com.companyname.exercise.util.UserGenerator;
 
 public class OrgTreeValidatorTest {
 
@@ -91,11 +92,11 @@ public class OrgTreeValidatorTest {
 	@Test
 	/*
 	 * Invalid Tree
-	 * 					company
-	 * 					/	  \
-	 * 			department1	department2
-	 * 				|			|
-	 * 			  user1   nestedDepartment
+	 *                   company
+	 *                   /     \
+	 *           department1 department2
+	 *              |            |
+	 *            user1   nestedDepartment
 	 * 
 	 */        
 	public void testInvalidTreeNestedDepartment(){
@@ -120,11 +121,11 @@ public class OrgTreeValidatorTest {
 	@Test
 	/*
 	 * Invalid Tree
-	 * 					company
-	 * 					/	  \
-	 * 			department1	department2
-	 * 				|			|
-	 * 			  user1    nestedCompany
+	 *                   company
+	 *                  /      \
+	 *          department1 department2
+	 *              |           |
+	 *            user1    nestedCompany
 	 * 
 	 */     
 	public void testInvalidTreeNestedCustomer(){
@@ -148,9 +149,9 @@ public class OrgTreeValidatorTest {
 	@Test
 	/*
 	 * Invalid Tree
-	 * 					company
-	 *					   |
-	 *				 nestedCompany
+	 *                  company
+	 *                     |
+	 *               nestedCompany
 	 * 
 	 */     
 	public void testInvalidTreeNestedCustomer2(){
@@ -169,13 +170,13 @@ public class OrgTreeValidatorTest {
 	@Test
 	/*
 	 * Invalid Tree
-	 * 					company
-	 * 					/	  \
-	 * 			department1	department2
-	 * 				|			|
-	 * 			  user1        user2
-	 * 							|
-	 * 						nestedUser
+	 *                   company
+	 *                   /     \
+	 *          department1  department2
+	 *               |            |
+	 *             user1        user2
+	 *                            |
+	 *                        nestedUser
 	 * 
 	 */
 	public void testInvalidTreeNestedUser(){
@@ -200,13 +201,13 @@ public class OrgTreeValidatorTest {
 	@Test
 	/*
 	 * Invalid Tree
-	 * 					company
-	 * 					/	  \
-	 * 			department1	department2
-	 * 				|			|
-	 * 			  user1        user2
-	 * 				|
-	 * 			nestedUser
+	 *                   company
+	 *                   /     \
+	 *          department1  department2
+	 *               |            |
+	 *             user1        user2
+	 *               |
+	 *          nestedUser
 	 * 
 	 */
 	public void testInvalidTreeNestedUser2(){
@@ -231,15 +232,15 @@ public class OrgTreeValidatorTest {
 	@Test
 	/*
 	 * Invalid Tree
-	 * 					company
-	 * 					   |	
-	 * 				  department1
-	 * 					   |
-	 * 			  		 user1
-	 * 					   |
-	 * 				   nestedUser
-	 * 					   |
-	 * 				nestedNestedUser
+	 *                   company
+	 *                      |	
+	 *                 department1
+	 *                      |
+	 *                    user1
+	 *                      |
+	 *                 nestedUser
+	 *                      |
+	 *              nestedNestedUser
 	 */
 	public void testInvalidTreeNestedUser3(){
 		User nestedUser = UserGenerator.getRandomUser();

@@ -1,10 +1,10 @@
-package com.companyname.util;
+package com.companyname.exercise.util;
 
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.companyname.model.State;
+import com.companyname.exercise.model.State;
 
 public class StateGenerator {
 	private static SecureRandom random = new SecureRandom();

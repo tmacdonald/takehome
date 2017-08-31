@@ -1,9 +1,9 @@
-package com.companyname.util;
+package com.companyname.exercise.util;
 
 import java.security.SecureRandom;
 
-import com.companyname.model.Address;
-import com.companyname.model.Country;
+import com.companyname.exercise.model.Address;
+import com.companyname.exercise.model.Country;
 
 public class AddressGenerator {
 	private static SecureRandom random = new SecureRandom();

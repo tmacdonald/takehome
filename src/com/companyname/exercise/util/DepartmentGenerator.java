@@ -1,9 +1,9 @@
-package com.companyname.util;
+package com.companyname.exercise.util;
 
 import java.security.SecureRandom;
 
-import com.companyname.model.Company;
-import com.companyname.model.Department;
+import com.companyname.exercise.model.Company;
+import com.companyname.exercise.model.Department;
 
 public class DepartmentGenerator {
 	private static SecureRandom random = new SecureRandom();
