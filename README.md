@@ -15,4 +15,16 @@ The project is a very basic Java project (no maven, gradle, etc).
 
 ## Setup
 
-To get started, clone this repository. In Eclipse, create a new workspace
+To get started, clone this repository. In Eclipse, import the project and add JUnit to the build path.
+
+## Section 1
+
+The objective here is to perform a code review and come up with suggestions for the developer as to what should/needs to be changed.
+
+All relevant code can be found in the package `com.companyname.codereview`.
+
+If you wish, you can go ahead and make code changes.
+
+## Section 2
+
+Section 2 deals with the package `com.companyname.exercise`. Here you can find a JUnit test suite in the tests package. One of the unit tests is failing and it requires a code change so that all of the test cases pass.
